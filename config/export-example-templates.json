@@ -1,0 +1,15 @@
+{
+  "type": "export",
+  "host": "https://my-grafana-test.example.com",
+  "findString": "dev-",
+  "dashboards": [
+    {
+      "id": "0ed18-20a1-4684-aa3f-d52a034edb40",
+      "template": "template/lambda-template.json"
+    },
+    {
+      "id": "DEVn9ojK69iz",
+      "template": "template/gateway-template.json"
+    }
+  ]
+}

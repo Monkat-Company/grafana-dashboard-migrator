@@ -1,0 +1,17 @@
+{
+  "type": "import",
+  "host": "https://my-grafana-prod.example.com",
+  "environment": "prod",
+  "dashboards": [
+    {
+      "id": "PROD0ed18-20a1-4684-aa3f-d52a034edb40",
+      "name": "My Service - Lambda [Prod]",
+      "template": "template/lambda-template.json"
+    },
+    {
+      "id": "PRODn9ojK69iz",
+      "name": "My Service - API Gateway [Prod]",
+      "template": "template/gateway-template.json"
+    }
+  ]
+}
