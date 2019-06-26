@@ -8,17 +8,17 @@ let handleResponse = (body) => new Promise((resolve, reject) => {
 
     console.log(body);
 
-    console.log('Dashboard found')
+    console.log('Dashboard found');
 
     const info = JSON.parse(body);
 
-    info['dashboard']['title'] = "SETME"
+    info['dashboard']['title'] = "SETME";
     delete info['dashboard']['id'];
     delete info['meta']['slug'];
-    delete info['meta']['url']
+    delete info['meta']['url'];
     forEach(info['dashboard']['panels'], (panels) => {
         forEach(panels['targets'], (targets) => {
-            let val = targets['dimensions']['FunctionName']
+            let val = targets['dimensions']['FunctionName'];
             if (val != null) {
                 val = val.replace(options.findString, 'SETME-');
                 targets['dimensions']['FunctionName'] = val;
