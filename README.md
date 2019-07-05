@@ -115,18 +115,20 @@ This code was tested against ```Version: 5.4.2```
 
 ## Building the executable
 
-Install  [nexe](https://github.com/nexe/nexe)
+Install [nexe](https://github.com/nexe/nexe)
 
 ```npm install -g nexe```
 
 Build executable
 
-```nexe index.js -o dist/grafanaDashboard -t 8.10.0```
+```nexe index.js -o dist/grafanaDashboard-mac -t mac-x64-8.10.0```
+```nexe index.js -o dist/grafanaDashboard-linux -t linux-x64-8.10.0```
 
+Note: See [nexe](https://github.com/nexe/nexe) for available targets.
 
 ## Usage
 
-Using the binary from the dist folder.
+Pick the correct binary from the dist folder and rename to grafanaDashboard.  Then run:
 
 ```
 grafanaDashboard -c <config file>
